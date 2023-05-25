@@ -133,3 +133,22 @@ input{
 .reset-keliling:hover{
     background: rgb(255, 226, 99);
 }
+
+/* Responsive CSS */
+@media only screen and (max-width: 600px) {
+    .figure-reset{
+        justify-content: center;
+    }
+    .hitung-luas{
+        width: 100%;
+    }
+    .reset-luas{
+        width: 100%;
+    }
+    .hitung-keliling{
+        width: 100%;
+    }
+    .reset-keliling{
+        width: 100%;
+    }
+}
