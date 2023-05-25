@@ -1,11 +1,17 @@
 //Fungsi hitung luas
 function hitungLuas() {
     var sisiLuas = document.getElementById("sisi-luas").value;
-    
+   
     var resultLuas = document.getElementsByClassName("result-luas");
+    if (sisiLuas.value === "") {
+        for (var i=0;i<resultLuas.length;i+=1){
+            resultLuas[i].style.display = 'none';
+        }
+    }
     for (var i=0;i<resultLuas.length;i+=1){
         resultLuas[i].style.display = 'block';
     }
+    
 
     document.getElementById("perhitungan-luas").innerText = sisiLuas;
     document.getElementById("perhitungan-luas-2").innerText = sisiLuas;
@@ -55,5 +61,17 @@ function resetKeliling() {
     var resultKeliling = document.getElementsByClassName("result-keliling");
     for (var i=0;i<resultKeliling.length;i+=1){
         resultKeliling[i].style.display = 'none';
+    }
+}
+
+//Input number validation
+document.getElementById("sisi-luas").addEventListener('input', validationLuas);
+function validationLuas() {
+    let e = this.value
+    let chars = /^[0-9]+$/
+
+    if(chars.test(e)){
+    } else{
+        alert("Input hanya dibatasi angka")
     }
 }
