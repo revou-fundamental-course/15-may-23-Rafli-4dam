@@ -34,15 +34,27 @@ input{
     background: rgb(44, 143, 204);
     margin-top: 20px;
     padding: 10px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
+}
+.keliling-subtitle{
+    color: white;
+    background: rgb(44, 143, 204);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 7px 7px 0px 0px;
 }
 .card{
     border: 2px solid rgb(44, 143, 204);
     background: white;
     padding: 10px 15px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 7px 7px;
 }
 .rumus-luas-persegi{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+.rumus-keliling-persegi{
     text-align: center;
     font-weight: bold;
     font-size: larger;
@@ -61,6 +73,9 @@ input{
 .result-luas{
     display: none;
 }
+.result-keliling{
+    display: none;
+}
 .hitung-luas{
     min-width: 70px;
     min-height: 40px;
@@ -71,7 +86,20 @@ input{
     font-size: larger;
     padding: 10px 15px;
 }
+.hitung-keliling{
+    min-width: 70px;
+    min-height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: rgb(24, 116, 177);
+    font-size: larger;
+    padding: 10px 15px;
+}
 .hitung-luas:hover{
+    background: rgb(73, 180, 252);
+}
+.hitung-keliling:hover{
     background: rgb(73, 180, 252);
 }
 .figure-luas{
@@ -91,6 +119,36 @@ input{
     color: white;
     background: rgb(207, 173, 20);
 }
+.reset-keliling{
+    min-width: 60px;
+    min-height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: rgb(207, 173, 20);
+}
 .reset-luas:hover{
     background: rgb(255, 226, 99);
+}
+.reset-keliling:hover{
+    background: rgb(255, 226, 99);
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 600px) {
+    .figure-reset{
+        justify-content: center;
+    }
+    .hitung-luas{
+        width: 100%;
+    }
+    .reset-luas{
+        width: 100%;
+    }
+    .hitung-keliling{
+        width: 100%;
+    }
+    .reset-keliling{
+        width: 100%;
+    }
 }

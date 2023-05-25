@@ -1,19 +1,15 @@
 //Fungsi hitung luas
 function hitungLuas() {
-    
-    //Input Sisi Persegi
     var sisiLuas = document.getElementById("sisi-luas").value;
     
-    //Reveal perhitungan seteleh sisi persegi diinput
     var resultLuas = document.getElementsByClassName("result-luas");
     for (var i=0;i<resultLuas.length;i+=1){
         resultLuas[i].style.display = 'block';
     }
-    //Memasukkan bilangan sisi persegi yang di input untuk ditampilkan
+
     document.getElementById("perhitungan-luas").innerText = sisiLuas;
     document.getElementById("perhitungan-luas-2").innerText = sisiLuas;
     
-    //Menghitung luas persegi
     let x = document.getElementById("sisi-luas").value;
     let y = document.getElementById("sisi-luas").value;
     let z = x * y;
@@ -21,13 +17,43 @@ function hitungLuas() {
 
     }
 
-    //Perintah Reset Luas Persegi
-    function resetLuas() {
+//Fungsi Reset Luas Persegi
+function resetLuas() {
+    document.getElementById("sisi-luas").value = "";
+
     document.getElementById("perhitungan-luas").innerText = "";
     document.getElementById("perhitungan-luas-2").innerText = "";
-    
+
     var resultLuas = document.getElementsByClassName("result-luas");
     for (var i=0;i<resultLuas.length;i+=1){
         resultLuas[i].style.display = 'none';
+    }
+}
+
+//Fungsi hitung keliling persegi
+function hitungKeliling() {
+    var sisiKeliling = document.getElementById("sisi-keliling").value;
+    
+    var resultKeliling = document.getElementsByClassName("result-keliling");
+    for (var i=0;i<resultKeliling.length;i+=1){
+        resultKeliling[i].style.display = 'block';
+    }
+
+    document.getElementById("perhitungan-keliling").innerText = sisiKeliling;
+
+    let y = document.getElementById("sisi-keliling").value;
+    let z = 4 * y;
+    document.getElementById("output-keliling").innerHTML = z;
+}
+
+//Fungsi Reset Keliling Persegi
+function resetKeliling() {
+    document.getElementById("sisi-keliling").value = "";
+
+    document.getElementById("perhitungan-keliling").innerText = "";
+
+    var resultKeliling = document.getElementsByClassName("result-keliling");
+    for (var i=0;i<resultKeliling.length;i+=1){
+        resultKeliling[i].style.display = 'none';
     }
 }
