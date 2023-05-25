@@ -1,13 +1,23 @@
 body {
     background-color: #e7e6e6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header{
     background: lightskyblue;
     text-align: center;
     padding: 20px 20px;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 h3{
     text-align: center;
+}
+h4{
+    margin: 10px 0px;
+    font-weight: normal;
 }
 p{
     margin: 0px;
@@ -33,21 +43,24 @@ input{
     color: white;
     background: rgb(44, 143, 204);
     margin-top: 20px;
-    padding: 10px;
+    padding: 10px 12px;
     border-radius: 7px 7px 0px 0px;
+    min-width: 60%;
 }
 .keliling-subtitle{
     color: white;
     background: rgb(44, 143, 204);
     margin-top: 20px;
-    padding: 10px;
+    padding: 10px 12px;
     border-radius: 7px 7px 0px 0px;
+    min-width: 60%;
 }
 .card{
     border: 2px solid rgb(44, 143, 204);
     background: white;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border-radius: 0px 0px 7px 7px;
+    min-width: 60%;
 }
 .rumus-luas-persegi{
     text-align: center;
@@ -136,8 +149,16 @@ input{
 
 /* Responsive CSS */
 @media only screen and (max-width: 600px) {
+    .formula-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .figure-reset{
         justify-content: center;
+    }
+    .figure-luas{
+        padding: 10px 0px;
     }
     .hitung-luas{
         width: 100%;
