@@ -31,3 +31,5 @@ function hitungLuas() {
         resultLuas[i].style.display = 'none';
     }
 }
+
+//Fungsi hitung keliling persegi
