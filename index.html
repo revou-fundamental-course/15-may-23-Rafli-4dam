@@ -12,6 +12,8 @@
         <span class="title">Katik</span>
         <span class="subtitle">Kalkulator Matematik</span>
     </header>
+    
+    <!-- Konten Luas Persegi -->
     <main>
         <div class="luas-subtitle">
             <h3>Luas Persegi</h3>
@@ -31,7 +33,7 @@
             </div>
             <div>
                 <h3>Hitung Luas Persegi</h3>
-                <input id="sisi-luas" name="sisi-luas" placeholder="Nilai Sisi">
+                <input id="sisi-luas" name="sisi-luas" placeholder="Nilai Sisi" required>
 
                 <p class="result-luas" id="rumus-luas">L = S x S</p>
                 <p class="result-luas"> L = <span id="perhitungan-luas"></span> x <span id="perhitungan-luas-2"></span></p>
@@ -48,11 +50,43 @@
         </div>
     </main>
 
+    <!-- Konten Keliling Persegi -->
     <main>
+        <div class="keliling-subtitle">
+            <h3>Keliling Persegi</h3>
+        </div>
+        <div class="card"> 
+            <div class="figure">
+                <div class="example-square"></div>
+            </div>
+            <div class="formula-description">
+                <p>Rumus Keliling Persegi yaitu:</p>
+                <br>
+                <p class="rumus-keliling-persegi">K = 4 x S</p>
+                <br>
+                <p>Di mana:</p>
+                <p>K = Keliling</p>
+                <p>S = Sisi</p>
+            </div>
+            <div>
+                <h3>Hitung Keliling Persegi</h3>
+                <input id="sisi-keliling" name="sisi-keliling" placeholder="Nilai Sisi">
 
+                <p class="result-keliling" id="rumus-keliling">K = 4 x S</p>
+                <p class="result-keliling"> K = 4 x <span id="perhitungan-keliling"></span></p>
+                <p class="result-keliling">Hasil Luas = <span id="output-keliling"></span></p>
+
+                <div class="figure-luas">
+                    <button class="hitung-keliling" type="submit" name="hitung-keliling" onclick="hitungKeliling()">Hitung</button>
+                </div>
+
+                <div class="figure-reset">
+                    <button class="reset-keliling" name="reset-keliling" onclick="resetKeliling()">Reset</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-
     </footer>
     <script src="js/script.js"></script>
 </body>
